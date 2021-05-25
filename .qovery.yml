@@ -1,0 +1,15 @@
+---
+application:
+  name: "truekeserver"
+  project: "Server"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "trueke"
+  version: "11"
+routers:
+- name: "main-truekeserver"
+  routes:
+  - application_name: "truekeserver"
+    paths:
+    - "/*"
